@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import React from React;
 import axios from 'axios';
 
-const ShowSchools = () => {
+export default function ShowSchools() {
   const [schools, setSchools] = useState([]);
 
   useEffect(() => {
@@ -47,4 +47,3 @@ const ShowSchools = () => {
     </div>
   );
 }
-export default ShowSchools;
